@@ -23,7 +23,7 @@ jobs:
           ${{ runner.os }}-
 
     - name: Install dependencies
-      run: pnpm import
+      run: npm install -g pnpm && pnpm install
 
     - name: Run linter
       run: next lint
